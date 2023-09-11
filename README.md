@@ -51,7 +51,7 @@ python ./script/predict.py -i ./example/demo.fa -o ./example/ --gpu 0
 Omitting the `--gpu` parameter will make GPSite run on CPU, which will take more time especially for the structure prediction pipeline. The prediction results will be saved under `./example/demo/pred/`. Here we provide the corresponding canonical input and prediction results under `./example/` for your reference. Residues with predicted binding scores > 0.5 should be considered binding sites.
 
 # Dataset and model
-We provide the datasets and the trained models here for those interested in reproducing our paper.  
+We provide the datasets and the trained models here for those interested in reproducing our paper:  
 The protein binding site datasets used in this study are stored in `./datasets/`  
 The trained GPSite models can be found under `./model/`
 
