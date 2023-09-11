@@ -3,36 +3,36 @@ GPSite is a geometry-aware multi-task network for simultaneously predicting bind
 ![workflow](https://github.com/biomed-AI/GPSite/blob/main/image/workflow.jpg)
 
 # System requirement
-GPSite is mainly based on the following packages:
--python  3.8.16  
--numpy  1.24.3  
--pytorch  1.13.1  
--pytorch-scatter  2.1.1  
--pytorch-cluster  1.6.1  
--pyg  2.3.0  
--biopython  1.81  
--fair-esm  2.0.0  
--dllogger  1.0.0  
--openfold  1.0.1  
--sentencepiece  0.1.99  
--transformers  4.30.1  
+GPSite is mainly based on the following packages:  
+- python  3.8.16  
+- numpy  1.24.3  
+- pytorch  1.13.1  
+- pytorch-scatter  2.1.1  
+- pytorch-cluster  1.6.1  
+- pyg  2.3.0  
+- biopython  1.81  
+- fair-esm  2.0.0  
+- dllogger  1.0.0  
+- openfold  1.0.1  
+- sentencepiece  0.1.99  
+- transformers  4.30.1  
 While we have not tested other versions, any reasonably recent versions of these requirements should work.
 
 # Install and set up GPSite
 **1.** Clone this repository by `git clone https://github.com/biomed-AI/GPSite.git` or download the code in ZIP archive
 **2.** Install the packages required by GPSite. To install [ESMFold](https://github.com/facebookresearch/esm) and [ProtTrans](https://github.com/agemagician/ProtTrans), one can follow their official tutorials. However, at the time of writing, we found some commands in the installation tutorial of ESMFold didn't work. To avoid unnecessary troubles, you can install GPSite according to the following instructions that we cleaned up:  
-a. To use the ESMFold model, make sure you start from an environment with python <= 3.9 and pytorch installed. Here we use python 3.8.16 and pytorch 1.13.1 with cuda version of 11.6. Then run:
+**a.** To use the ESMFold model, make sure you start from an environment with python <= 3.9 and pytorch installed. Here we use python 3.8.16 and pytorch 1.13.1 with cuda version of 11.6. Then run:
 ```
 pip install "fair-esm[esmfold]"
 pip install 'dllogger @ git+https://github.com/NVIDIA/dllogger.git'
 pip install modelcif==0.7
 ```
 Finally, download the [openfold](https://github.com/aqlaboratory/openfold) ZIP archive, unzip it, and run `python3 setup.py install`.  
-b. To use the ProtTrans model, run:
+**b.** To use the ProtTrans model, run:
 ```
 pip install SentencePiece transformers
 ```
-c. Finally, install the remaining packages required by GPSite:
+**c.** Finally, install the remaining packages required by GPSite:
 ```
 conda install pyg -c pyg
 conda install pytorch-scatter -c pyg
