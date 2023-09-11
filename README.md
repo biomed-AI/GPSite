@@ -15,7 +15,8 @@ GPSite is mainly based on the following packages:
 - dllogger  1.0.0  
 - openfold  1.0.1  
 - sentencepiece  0.1.99  
-- transformers  4.30.1  
+- transformers  4.30.1
+
 While we have not tested other versions, any reasonably recent versions of these requirements should work.
 
 # Install and set up GPSite
