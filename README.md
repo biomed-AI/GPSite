@@ -56,8 +56,9 @@ The protein binding site datasets used in this study are stored in `./datasets/`
 The trained GPSite models can be found under `./model/`
 
 # Citation and contact
-Citation:  
-@article {Yuan2023.11.02.565344,
+Citation: 
+```bibtex 
+@article{Yuan2023.11.02.565344,
 	author = {Qianmu Yuan and Chong Tian and Yuedong Yang},
 	title = {Genome-scale annotation of protein binding sites via language model and geometric deep learning},
 	year = {2023},
@@ -66,6 +67,7 @@ Citation:
 	URL = {https://www.biorxiv.org/content/early/2023/11/05/2023.11.02.565344},
 	journal = {bioRxiv}
 }
+```  
 
 Contact:  
 Qianmu Yuan (yuanqm3@mail2.sysu.edu.cn)  
