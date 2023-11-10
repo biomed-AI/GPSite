@@ -56,9 +56,9 @@ def process_dssp(dssp_file):
             SS = "C"
         SS_vec = np.zeros(8)
         SS_vec[SS_type.find(SS)] = 1
-        ACC = float(lines[i][34:38].strip())
-        ASA = min(1, ACC / rASA_std[aa_type.find(aa)])
-        dssp_feature.append(np.concatenate((np.array([ASA]), SS_vec)))
+        ASA = float(lines[i][34:38].strip())
+        RSA = min(1, ASA / rASA_std[aa_type.find(aa)]) # relative solvent accessibility
+        dssp_feature.append(np.concatenate((np.array([RSA]), SS_vec)))
 
     return seq, dssp_feature
 
