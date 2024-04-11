@@ -58,14 +58,14 @@ The trained GPSite models can be found under `./model/`
 # Citation and contact
 Citation: 
 ```bibtex 
-@article{10.7554/eLife.93695.1,
+@article{10.7554/eLife.93695,
 	author = {Qianmu Yuan and Chong Tian and Yuedong Yang},
 	title = {Genome-scale annotation of protein binding sites via language model and geometric deep learning},
 	journal = {eLife},
         year = {2024},
         volume = {13},
-	doi = {10.7554/eLife.93695.1},
-        URL = {https://doi.org/10.7554/eLife.93695.1}
+	doi = {10.7554/eLife.93695},
+        URL = {https://doi.org/10.7554/eLife.93695}
 }
 ```  
 
