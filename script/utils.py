@@ -2,7 +2,7 @@ import string, os
 import numpy as np
 
 MAX_INPUT_SEQ = 1000
-MAX_SEQ_LEN = 1500
+MAX_SEQ_LEN = 2000
 
 nn_config = {
     'node_input_dim': 1024 + 9 + 184,
